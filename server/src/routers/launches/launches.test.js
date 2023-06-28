@@ -5,8 +5,8 @@ const { getAllPlanets } = require('../planets/planets.controller');
 
 describe('Launches API', () => {
     beforeAll(async () => {
-        await getAllPlanets();
         await connectToDatabase();
+        await getAllPlanets();
     });
 
     afterAll(async () => {
