@@ -1,9 +1,11 @@
 const request = require('supertest');
 const app = require('../../app')
 const { connectToDatabase, disconnect }  = require('../../services/mongo');
+const { getAllPlanets } = require('../planets/planets.controller'); 
 
 describe('Launches API', () => {
     beforeAll(async () => {
+        await getAllPlanets();
         await connectToDatabase();
     });
 
