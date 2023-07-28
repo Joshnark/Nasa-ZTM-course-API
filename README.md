@@ -1,4 +1,4 @@
-# nasa-project-ztm-test
+# Nasa API from Zero To Mastery Bootcamp
 
 Zero to Mastery Node.JS code bootcamp project.
 
